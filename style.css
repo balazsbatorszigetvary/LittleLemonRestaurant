@@ -1,0 +1,183 @@
+body{
+    background-color: rgb(237,239,238);
+    font-family: 'Markazi Text', serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left:5%;
+    margin-right: 5%;   
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+.title{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar{
+    list-style: none;
+    display: flex;
+    justify-content: center;  
+  }
+
+  nav li{
+    display: inline-block;
+  }
+
+  section{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  article {
+    flex: 1;
+  }
+
+  footer{
+    display: flex;
+  }
+
+  footer div{
+    flex: 1;
+  }
+
+  nav{
+    background: rgb(51,51,51);
+    border-radius: 10px;
+  }
+  li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    margin-left: 25px;
+    font-weight: bold;
+    color: rgb(237,239,238);
+  }
+
+  .offthisweekend{
+    
+    background-image: url('anotherbackground.jpg');
+    background-repeat: no-repeat;
+    background-attachment:locals;
+    background-size: 100% 120%;  
+    color: rgb(237,239,238);
+    border-radius: 15px ;
+    padding-left: 10px;
+    
+    margin-bottom:0px;
+    
+  }
+
+  .offthisweekend>h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+  }
+
+  .offthisweekend p{
+    margin-top: 0;
+    padding-right: 530px;
+  }
+  .container{
+    margin-top: 10px;
+  }
+
+  .container > article{
+    border-radius: 10px;
+    background: rgb(245,229,214);
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  }
+
+  .ournewmenu{
+    margin-right: 10px;
+  }
+  .bookatablearticle{
+    margin-right: 10px;
+  }
+
+  .ournewmenu p:last-child{
+    margin-top: 35px;
+  }
+  .bookatablearticle p:last-child{
+    margin-top: 35px;
+  }
+
+  footer{
+    
+    display: flex;
+    justify-content:space-between;
+    padding: 0 10px 0 20px;
+  }
+
+  footer div:nth-child(2){
+    
+    margin-top: 20px;
+    width: 600px;
+    text-align:  right;
+    border-top: 1px solid black;;
+  }
+
+  footer div:first-child{
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+.navbareffects{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Markazi Text', serif;
+    color:rgb(237,239,238);
+    
+}
+.navbareffects:after{
+    content:"";
+    position: absolute;
+    background-color: gold;
+    height: 3px;
+    width:0;
+    left:0;
+    bottom: -10px;  
+    transition: 0.3s;
+    
+}
+
+.navbareffects:hover:after{
+    width: 100%;
+    font-size: 50px;
+}
+
+li:hover{
+    text-shadow: 0 0 20px white;
+    transition: 0.3s;
+}
+
+#smalllogo:hover{
+    transform: rotateZ(-20deg);
+    transition: 0.5s;
+    
+  }
+
+  h2:hover{
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+ 
+@keyframes drive{
+    from{transform: translate3d(0,0,0)}
+    to{transform: translate3d(70px,0,0)}
+}
+
+h1{
+    animation: drive 2s linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
